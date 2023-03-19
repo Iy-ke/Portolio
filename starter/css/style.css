@@ -20,14 +20,26 @@ body {
 }
 
 /* Set styles for the header */
-.title{
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
-  background-color: gray;
-  color: var(--secondary-color);
-  background-image: "./images/02-portfolio-4.jpg";
+  background-color: gray; 
+  color: black; 
+  background-image: url("../images/02-portfolio-4.jpg");
+  background-size: cover; /* or "contain" depending on your desired effect */
+  background-position: center center; /* center the image both horizontally and vertically */
+  background-repeat: no-repeat; /* make sure the image is not repeated */
+}
+
+/* styling avatar */
+#avatar {
+  width: 120px; /* adjust the width of the photo */
+  height: 120px; /* adjust the height of the photo */
+  border: 5px solid #ffffff; /* add a white border around the photo */
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3); /* add a subtle drop shadow */
+  justify-content: left;  
 }
 
 /* Set styles for the logo */
@@ -40,6 +52,7 @@ header h1 {
 /* Set styles for the navigation */
 header nav {
   display: flex;
+  margin-left: 0%;
 }
 
 /* Set styles for the navigation links */
@@ -62,7 +75,7 @@ header nav a.active {
   justify-content: center;
   align-items: center;
   height: 30vh;
-  background-image: url('./assets/images/hero-bg.jpg');
+  background-image: url('../images/02-portfolio-1.jpg');
   background-size: cover;
   background-position: center;
   color: var(--secondary-color);
@@ -84,6 +97,11 @@ header nav a.active {
 /* Set styles for the page sections */
 .page-section {
   margin: 2rem 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  
 }
 
 /* Set styles for the section headings */
@@ -91,6 +109,7 @@ header nav a.active {
   margin-bottom: 1rem;
   font-size: 2rem;
   font-weight: bold;
+  color: gray;
 }
 
 /* Set styles for the work section */
@@ -100,17 +119,28 @@ header nav a.active {
 }
 
 /* Set styles for the work section images */
-#work img {
-  margin: 0.5rem;
-  width: 200px;
-  cursor: pointer;
+.container {
+  display: flex;
+  flex-wrap: wrap;
+ 
 }
+
+.box {
+  flex: 1 0 calc(50% - 10px);
+  height: 200px;
+  margin: 5px;
+  background-color: #ccc;
+}
+
 
 /* Set styles for the first work section image */
 #work img:first-of-type {
   width: 300px;
 }
 
+#tw {
+background-image: url('../images/02-portfolio-1.jpg'); 
+}
 /* Set media queries for responsive layout */
 @media screen and (max-width: 768px) {
   header {

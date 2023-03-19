@@ -1,0 +1,158 @@
+:root {
+  --primary-color: #008080;
+  --secondary-color: #f5f5f5;
+  --text-color: #333333;
+}
+
+/* Set box-sizing for all elements */
+* {
+  box-sizing: border-box;
+}
+
+/* Set default styles for body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+  background-color: var(--secondary-color);
+  color: var(--text-color);
+}
+
+/* Set styles for the header */
+.title{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: gray;
+  color: var(--secondary-color);
+  background-image: "./images/02-portfolio-4.jpg";
+}
+
+/* Set styles for the logo */
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Set styles for the navigation */
+header nav {
+  display: flex;
+}
+
+/* Set styles for the navigation links */
+header nav a {
+  display: block;
+  padding: 1rem;
+  color: var(--secondary-color);
+  text-decoration: none;
+}
+
+/* Set styles for the active navigation link */
+header nav a.active {
+  background-color: var(--text-color);
+  color: var(--primary-color);
+}
+
+/* Set styles for the hero banner */
+.hero-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+  background-image: url('./assets/images/hero-bg.jpg');
+  background-size: cover;
+  background-position: center;
+  color: var(--secondary-color);
+}
+
+/* Set styles for the hero banner subtitle */
+.hero-banner h2 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Set styles for the main content wrapper */
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+/* Set styles for the page sections */
+.page-section {
+  margin: 2rem 0;
+}
+
+/* Set styles for the section headings */
+.page-section h2 {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Set styles for the work section */
+#work {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Set styles for the work section images */
+#work img {
+  margin: 0.5rem;
+  width: 200px;
+  cursor: pointer;
+}
+
+/* Set styles for the first work section image */
+#work img:first-of-type {
+  width: 300px;
+}
+
+/* Set media queries for responsive layout */
+@media screen and (max-width: 768px) {
+  header {
+    flex-direction: column;
+  }
+  
+  header nav {
+    margin-top: 1rem;
+  }
+  
+  .hero-banner {
+    height: 50vh;
+  }
+  
+  #work img {
+    width: 100%;
+  }
+}
+
+
+
+/* * {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+} */
+
